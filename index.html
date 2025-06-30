@@ -121,6 +121,39 @@
             margin-top: 5px;
             display: none; /* Domyślnie ukryty */
         }
+        .mklogo {
+            width: 7%;
+        }
+
+        .footer {
+            position: fixed; /* Stopka będzie zawsze widoczna na dole */
+            bottom: 0; /* Przykleja stopkę do dolnej krawędzi okna przeglądarki */
+            width: 100%; /* Rozciąga stopkę na całą szerokość */
+            color: black;
+            padding: 15px 0; /* Odstęp wewnętrzny góra/dół, 0 po bokach */
+            text-align: center; /* Wyśrodkowuje zawartość stopki */
+            z-index: 1000; /* Upewnia się, że stopka jest na wierzchu innych elementów */
+        }
+
+        .footer .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer p {
+            margin: 5px 0; /* Odstęp między akapitami w stopce */
+        }
+
+        .footer a {
+            color: #007bff; /* Kolor linków w stopce */
+            text-decoration: none; /* Usuwa podkreślenie linków */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Podkreślenie linków po najechaniu myszką */
+        }
     </style>
 </head>
 <body>
@@ -143,7 +176,18 @@
             <div id="copy-info-single">Naciśnij, aby skopiować</div> <textarea id="wynik-multiple" readonly></textarea>
         </div>
     </div>
-
+<footer class="footer">
+    <div class="content">
+        <a href="https://www.linkedin.com/in/kopaszewskimateusz/"><img class="mklogo" src="https://dabrowka.wlkp.pl/images/logo/Mateusz%20Kopaszewski.png" alt="Mateusz Kopaszewski LinkedIn"></a>
+        <p>
+            Copyright © <a href="https://www.instagram.com/kopaszewskimateusz/">Mateusz Kopaszewski</a>
+            <br>
+            <a href="https://github.com/mateuszkopa">
+                <img src="https://img.shields.io/badge/Follow-mateuszkopa-white?style=social&amp;logo=github" alt="Mateusz Kopaszewski Github">
+            </a>
+        </p>
+    </div>
+</footer>
     <script>
         function generujLosowyZwrot() {
             const tablica1 = ["Zielony", "Niebieski", "Czerwony", "Zolty", "Czarny", "Duzy", "Maly", "Szybki", "Wolny", "Cieply", "Goracy", "Ladny", "Brazowy", "Dobry", "Uroczy", "Grzeczny", "Mily", "Spokojny", "Cierpliwy", "Czysty", "Przyjemny", "Drewniany", "Szczesliwy", "Szklany", "Kwadratowy", "Okragly", "Bialy", "Kolorowy", "Bursztynowy", "Czekoladowy", "Kremowy", "Limonkowy", "Bezowy"];
