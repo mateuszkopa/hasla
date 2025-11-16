@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateusz Kopaszewski">
     <title>Generator Haseł</title>
     <style>
         body {
@@ -190,8 +191,14 @@
 </footer>
     <script>
         function generujLosowyZwrot() {
-            const tablica1 = ["Zielony", "Niebieski", "Czerwony", "Zolty", "Czarny", "Duzy", "Maly", "Szybki", "Wolny", "Cieply", "Goracy", "Ladny", "Brazowy", "Dobry", "Uroczy", "Grzeczny", "Mily", "Spokojny", "Cierpliwy", "Czysty", "Przyjemny", "Drewniany", "Szczesliwy", "Szklany", "Kwadratowy", "Okragly", "Bialy", "Kolorowy", "Bursztynowy", "Czekoladowy", "Kremowy", "Limonkowy", "Bezowy"];
-            const tablica2 = ["Stol", "Samochod", "Telefon", "Komputer", "Kwiat", "Dom", "Dlugopis", "Laptop", "Zolw", "Okon", "Papier", "Hamak", "Mlynek", "Cedzak", "Pakiet", "Regal", "Lozko", "Garnek", "Zachod", "Mak", "Woz", "Zolw", "Ogien", "Szum", "Row", "Kalkulator", "Slup", "Samochodzik", "Wodnik", "Pancernik", "Wodnik"];
+            const tablica1 =
+                ["Zielony", "Niebieski", "Czerwony", "Zolty", "Czarny", "Duzy", "Maly", "Szybki", "Wolny", "Cieply", "Goracy", "Ladny", "Brazowy", "Dobry", "Uroczy", "Grzeczny",
+                    "Mily", "Spokojny", "Cierpliwy", "Czysty", "Przyjemny", "Drewniany", "Szczesliwy", "Szklany", "Kwadratowy", "Okragly", "Bialy", "Kolorowy", "Bursztynowy",
+                    "Czekoladowy", "Kremowy", "Limonkowy", "Bezowy", "Grafitowy", "Miedziany", "Odwazny", "Dociekliwy", "Imponuacy", "Kojacy"];
+            const tablica2 =
+                ["Stol", "Samochod", "Telefon", "Komputer", "Kwiat", "Dom", "Dlugopis", "Laptop", "Zolw", "Okon", "Papier", "Hamak", "Mlynek", "Cedzak", "Pakiet",
+                "Regal", "Lozko", "Garnek", "Zachod", "Mak", "Woz", "Zolw", "Ogien", "Szum", "Row", "Kalkulator", "Slup", "Samochodzik", "Wodnik", "Pancernik",
+                "Wodnik", "Dziobak", "Kon"];
             const znakiSpecjalne = "!@#$%^&*()_+{}[]<>?=+";
 
             const element1 = tablica1[Math.floor(Math.random() * tablica1.length)];
